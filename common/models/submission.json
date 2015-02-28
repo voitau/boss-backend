@@ -1,0 +1,23 @@
+{
+  "name": "Submission",
+  "plural": "Submissions",
+  "base": "PersistedModel",
+  "properties": {
+    "photoURL": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "geopoint",
+      "required": true
+    },
+    "donation": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

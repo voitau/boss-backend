@@ -6,22 +6,27 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "bossdb",
+    "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "bossdb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "bossdb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "bossdb",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "bossdb",
     "public": false
+  },
+  "Submission": {
+    "dataSource": "bossdb",
+    "public": true
   }
 }
