@@ -28,5 +28,9 @@
   "Submission": {
     "dataSource": "bossdb",
     "public": true
+  },
+  "Container": {
+    "dataSource": "bossimgs",
+    "public": true
   }
 }

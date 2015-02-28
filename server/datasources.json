@@ -1,8 +1,14 @@
 {
   "bossdb": {
     "host": "localhost",
-    "name": "bossdb",
     "database": "bossdb",
+    "name": "bossdb",
     "connector": "mongodb"
+  },
+  "bossimgs": {
+    "name": "bossimgs",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "storage"
   }
 }
