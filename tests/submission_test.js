@@ -1,8 +1,29 @@
 var app = require('..');
 var request = require('supertest');
-var assert = require("assert");
+var assert = require('chai').assert;
 
 describe('Submissions', function () {
+
+  it('should not post totalDonations amount', function(done) {
+    var submissionSpec = {
+      photoURL: "url",
+      location: "10,10",
+      status: "CREATED",
+      category: "POTHOLE",
+      totalDonationAmount: 10
+    };
+
+    request(app)
+      .post('/api/Submissions')
+      .set('Content-Type', 'application/json')
+      .send(submissionSpec)
+      .expect(200)
+      .end(function (err, response) {
+        var submission = response.body;
+        assert.isUndefined(submission.totalDonationAmount);
+        done();
+      });
+  });
 
   describe('submission created', function() {
 
@@ -42,9 +63,7 @@ describe('Submissions', function () {
           .set('Content-Type', 'application/json')
           .send(firstPayment)
           .expect(200)
-          .end(function (err, response) {
-            done();
-          });
+          .end(done);
       });
 
       it('submission total should be equal to first payment', function(done) {

@@ -16,6 +16,12 @@ module.exports = function(Submission) {
     'BROKEN_STREETLIGHTS'
   ]});
 
+  Submission.beforeRemote('create', function(ctx, unused, next) {
+    delete ctx.args.data.totalDonationAmount;
+    next();
+  });
+
+
   Submission.afterRemote('**.__create__payments', function (ctx, result, next) {
     var payment = ctx.result;
     var currentTotalDonationAmount = ctx.instance.__data.totalDonationAmount || 0;
