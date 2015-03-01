@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "test": "mocha tests/*"
   },
   "dependencies": {
     "braintree": "^1.23.0",
@@ -18,5 +19,9 @@
   },
   "optionalDependencies": {
     "loopback-explorer": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
   }
 }
