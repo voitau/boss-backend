@@ -32,5 +32,9 @@
   "Container": {
     "dataSource": "bossimgs",
     "public": true
+  },
+  "Update": {
+    "dataSource": "bossdb",
+    "public": false
   }
 }

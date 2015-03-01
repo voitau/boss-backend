@@ -1,0 +1,14 @@
+{
+  "name": "Update",
+  "base": "PersistedModel",
+  "properties": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
