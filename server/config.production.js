@@ -1,5 +1,4 @@
 module.exports = {
-  protocol: 'https',
   braintree: {
     merchantId: process.env.BRAINTREE_MERCHANT_ID,
     publicKey: process.env.BRAINTREE_PUBLIC_KEY,
