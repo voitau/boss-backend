@@ -1,0 +1,19 @@
+{
+  "name": "Payment",
+  "plural": "Payments",
+  "base": "PersistedModel",
+  "properties": {
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "paymentMethodNonce": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

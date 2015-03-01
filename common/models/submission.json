@@ -11,9 +11,9 @@
       "type": "geopoint",
       "required": true
     },
-    "donation": {
+    "totalDonationAmount": {
       "type": "number",
-      "required": true
+      "description": "Calculated on server-side"
     },
     "status": {
       "type": "string",
@@ -48,6 +48,11 @@
     "updates": {
       "type": "hasMany",
       "model": "Update",
+      "foreignKey": "submissionId"
+    },
+    "payments": {
+      "type": "hasMany",
+      "model": "Payment",
       "foreignKey": "submissionId"
     }
   },

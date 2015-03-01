@@ -36,5 +36,9 @@
   "Update": {
     "dataSource": "bossdb",
     "public": false
+  },
+  "Payment": {
+    "dataSource": "bossdb",
+    "public": false
   }
 }
