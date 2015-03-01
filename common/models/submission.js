@@ -41,11 +41,18 @@ module.exports = function(Submission) {
         async.each(
           payments,
           function(payment, pcb) {
-            gateway.transaction.releaseFromEscrow(payment.btTransactionId, function(err, result) {
-              if (err) return pcb(err);
+            gateway.http.put('/transactions/' + payment.btTransactionId + '/settle', null, function(err, result) {
+              if (err) {
+                console.log(err);
+              }
               console.log(result);
-              pcb();
+              gateway.transaction.releaseFromEscrow(payment.btTransactionId, function(err, result) {
+                if (err) return pcb(err);
+                console.log(result);
+                pcb();
+              });
             });
+
           },
           function(err) {
             if (err) {
@@ -89,10 +96,12 @@ module.exports = function(Submission) {
             console.log(err);
           } else {
             if (result.transaction) {
-              payment.updateAttributes({btTransactionId: result.transaction.id}, function (err, updatedPayment) {
+              var btTransactionId = result.transaction.id;
+              payment.updateAttributes({btTransactionId: btTransactionId}, function (err, updatedPayment) {
                 if (err) {
                   console.log(err);
                 }
+
                 next();
               });
             }
