@@ -1,4 +1,4 @@
-[![Build Status](https://snap-ci.com/voitau/boss-backend/branch/master/build_image)](https://snap-ci.com/voitau/boss-backend/branch/master)
+[![Build Status](https://snap-ci.com/voitau/local-alert-backend/branch/master/build_image)](https://snap-ci.com/voitau/local-alert-backend/branch/master)
 # boss-backend
 
 # Binary data
