@@ -7,4 +7,11 @@ module.exports = function(Submission) {
     'IN_PROGRESS',
     'COMPLETED'
   ]});
+
+  Submission.validatesInclusionOf('category', {in: [
+    'POTHOLE',
+    'DEBRIS',
+    'DAMAGED_SIDEWALK',
+    'STREET_SWEEPING'
+  ]});
 };

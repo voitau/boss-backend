@@ -28,6 +28,18 @@
         "<li>COMPLETED",
         "</ul>"
       ]
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "description": [
+        "Valid values:<ul>",
+        "<li>POTHOLE",
+        "<li>DEBRIS",
+        "<li>DAMAGED_SIDEWALK",
+        "<li>STREET_SWEEPING",
+        "</ul>"
+      ]
     }
   },
   "validations": [],
