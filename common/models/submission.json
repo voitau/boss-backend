@@ -14,6 +14,20 @@
     "donation": {
       "type": "number",
       "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "description": [
+        "Valid values:<ul>",
+        "<li>CREATED",
+        "<li>ASSIGNED",
+        "<li>PENDING_ACCEPTANCE",
+        "<li>ACCEPTED",
+        "<li>IN_PROGRESS",
+        "<li>COMPLETED",
+        "</ul>"
+      ]
     }
   },
   "validations": [],
