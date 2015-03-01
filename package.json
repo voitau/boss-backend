@@ -4,7 +4,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "mkdir storage; mocha ./tests/*; rm -rf storage"
+    "test": "mkdir storage; mocha --timeout 10000 ./tests/*"
   },
   "dependencies": {
     "braintree": "^1.23.0",
