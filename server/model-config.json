@@ -40,5 +40,9 @@
   "Payment": {
     "dataSource": "bossdb",
     "public": false
+  },
+  "ClientToken": {
+    "dataSource": "bossdb",
+    "public": true
   }
 }
