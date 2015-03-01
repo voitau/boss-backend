@@ -8,3 +8,9 @@ curl -X POST -F "image=FILE_NAME" URL/api/Containers/DIRECTORY/upload
 ## Download
 curl -X GET URL/api/Containers/DIRECTORY/download/FILE_NAME
 
+# Payments
+## Generate BrainTree token
+curl -X GET URL/api/ClientTokens/generate
+
+## Make payment
+TBD
