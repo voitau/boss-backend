@@ -10,6 +10,9 @@
     "paymentMethodNonce": {
       "type": "string",
       "required": true
+    },
+    "btTransactionId": {
+      "type": "string"
     }
   },
   "validations": [],

@@ -7,6 +7,7 @@
     "test": "mkdir storage; mocha --timeout 10000 ./tests/*"
   },
   "dependencies": {
+    "async": "^0.9.0",
     "braintree": "^1.23.0",
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",

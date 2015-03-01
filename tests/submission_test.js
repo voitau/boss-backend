@@ -109,6 +109,21 @@ describe('Submissions', function () {
               done();
             });
         });
+
+        it('should update submission with ACCEPTED status', function(done) {
+          var updatedSubmission = {id: submission.id, status: "ACCEPTED"};
+
+          request(app)
+            .put('/api/Submissions')
+            .set('Content-Type', 'application/json')
+            .send(updatedSubmission)
+            .expect(200)
+            .end(function (err, response) {
+              if (err) return done(err);
+              submission = response.body;
+              done();
+            });
+        });
       })
     })
   });
