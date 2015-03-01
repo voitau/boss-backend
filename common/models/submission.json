@@ -38,6 +38,7 @@
         "<li>DEBRIS",
         "<li>DAMAGED_SIDEWALK",
         "<li>STREET_SWEEPING",
+        "<li>BROKEN_STREETLIGHTS",
         "</ul>"
       ]
     }

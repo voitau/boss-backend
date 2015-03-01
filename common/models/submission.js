@@ -12,6 +12,7 @@ module.exports = function(Submission) {
     'POTHOLE',
     'DEBRIS',
     'DAMAGED_SIDEWALK',
-    'STREET_SWEEPING'
+    'STREET_SWEEPING',
+    'BROKEN_STREETLIGHTS'
   ]});
 };
