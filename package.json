@@ -1,5 +1,5 @@
 {
-  "name": "boss",
+  "name": "local-alert-backend",
   "version": "0.0.0",
   "main": "server/server.js",
   "scripts": {
